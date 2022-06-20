@@ -1,6 +1,6 @@
 # smart_attendance
 
-A new Flutter project.
+WCS Hackathon Project
 
 ## Getting Started
 
