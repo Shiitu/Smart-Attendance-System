@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:smart_attendance/screen/getatt.dart';
 
-class Mark extends StatefulWidget {
-  const Mark({ Key? key }) : super(key: key);
+class Get extends StatefulWidget {
+  const Get({ Key? key }) : super(key: key);
 
   @override
-  State<Mark> createState() => _MarkState();
+  State<Get> createState() => _GetState();
 }
 
-class _MarkState extends State<Mark> {
+class _GetState extends State<Get> {
   get dateinput => null;
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
         appBar: AppBar(
-            title:Text("Check Your Attendance"), 
+            title:Text("Request Leaves"), 
             backgroundColor: Colors.purple[300], //background color of app bar
         ),
         body:Container(
           padding: EdgeInsets.all(15),
-          height:350,
+          // height:350,
           // child: Row(
           //   children: [
           //   ],
@@ -30,13 +29,32 @@ class _MarkState extends State<Mark> {
             
             children: [
               SizedBox(height: 10,),
-              Text("Enter the Starting Date : ",
+              Text("Enter The Number of Days : ",
                 style: TextStyle(
                   fontWeight: FontWeight. bold,
                   fontSize: 18
                 ),
               ),
               SizedBox(height: 10,),
+              Padding(
+              //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              child: TextField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Enter the number of days',
+                    // hintText: 'Enter Valid Employee ID as AB1250'
+                    ),
+              ),
+            ),
+            SizedBox(height: 10,),
+            Text("From : ",
+                style: TextStyle(
+                  // fontWeight: FontWeight. bold,
+                  fontSize: 15
+                ),
+              ),
+              // SizedBox(height: 10,),
               Center( 
                  child:TextField(
                     controller: dateinput, //editing controller of this TextField
@@ -69,10 +87,10 @@ class _MarkState extends State<Mark> {
                  )
               ),
               SizedBox(height: 20,),
-              Text("Enter the Ending Date : ",
+              Text("To :",
                 style: TextStyle(
-                  fontWeight: FontWeight. bold,
-                  fontSize: 18
+                  // fontWeight: FontWeight. bold,
+                  fontSize: 15
                 ),
               ),
               Center( 
@@ -118,11 +136,13 @@ class _MarkState extends State<Mark> {
                       context, MaterialPageRoute(builder: (_) => Get()));
                 },
                 child: Text(
-                  'Get Attendance',
+                  'Request',
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
             ),
+            SizedBox(height: 300,),
+            Text("Your Request is approved by your HR. So Stay Tune!!!!!!")
             ],
           )
           

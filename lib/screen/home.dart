@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:smart_attendance/screen/mark.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:icon_decoration/icon_decoration.dart';
+import 'package:smart_attendance/screen/getatt.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -80,6 +82,7 @@ class _HomePageState extends State<HomePage> {
                   new GestureDetector(
                     onTap: () {
                           print("Container clicked");
+                           
                         },
                     child: Expanded(
                       child: Container(
@@ -116,6 +119,10 @@ class _HomePageState extends State<HomePage> {
                   new GestureDetector(
                     onTap: () {
                           print("Container clicked");
+                           Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Mark()),
+                            );
                         },
                     child: Expanded(
                       child: Container(
@@ -150,6 +157,10 @@ class _HomePageState extends State<HomePage> {
                   new GestureDetector(
                     onTap: () {
                           print("Container clicked");
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Get()),
+                            );
                         },
                     child: Expanded(
                       child: Container(
