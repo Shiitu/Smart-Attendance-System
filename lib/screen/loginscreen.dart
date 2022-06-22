@@ -20,23 +20,28 @@ class _LoginState extends State<Login> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            SizedBox(height: 50,),
             Padding(
               padding: const EdgeInsets.only(top: 60.0),
               child: Center(
                 child: Container(
-                    width: 200,
-                    height: 150,
-                    /*decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(50.0)),*/
-                    // child: Image.asset('asset/images/loogo.png',
-                    //   width: 50,
-                    //   height: 50,
-                    // )
-                    child: Text('Yaha logo Lagna hai ')
+                    // width: 200,
+                    // height: 150,
+                    decoration: BoxDecoration(
+                        // color: Colors.red,
+                        // image: Image.asset("assets/images/businessman.png"),
+                        // borderRadius: BorderRadius.circular(50.0)
+                        ),
+                    child: Image.asset('assets/images/businessman.png',
+                    // scale: 1.0,
+                      width: 100,
+                      height: 100,
+                    )
+                    // child: Text('Yaha logo Lagna hai ')
                     ),
               ),
             ),
+            SizedBox(height: 50,),
             Padding(
               //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
               padding: EdgeInsets.symmetric(horizontal: 15),
@@ -47,25 +52,24 @@ class _LoginState extends State<Login> {
                     hintText: 'Enter Valid Employee ID as AB1250'),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 15.0, right: 15.0, top: 15, bottom: 0),
-              // padding: EdgeInsets.symmetric(horizontal: 15),
-              child: TextField(
-
-                obscureText: true,
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Password',
-                    hintText: 'Enter Your Password'),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.only(
+            //       left: 15.0, right: 15.0, top: 15, bottom: 0),
+            //   // padding: EdgeInsets.symmetric(horizontal: 15),
+            //   child: TextField(
+            //     obscureText: true,
+            //     decoration: InputDecoration(
+            //         border: OutlineInputBorder(),
+            //         labelText: 'Password',
+            //         hintText: 'Enter Your Password'),
+            //   ),
+            // ),
             FlatButton(
               onPressed: (){
                 //TODO FORGOT PASSWORD SCREEN GOES HERE
               },
               child: Text(
-                'Forgot Password',
+                'Get Your Employee ID Here !!',
                 style: TextStyle(color: Colors.purple[300], fontSize: 15),
               ),
             ),

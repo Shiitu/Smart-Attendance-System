@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:icon_decoration/icon_decoration.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -82,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                         },
                     child: Expanded(
                       child: Container(
-                        // width: 20,
+                        width: 100,
                         height: 100,
                         decoration: BoxDecoration(
                           color: Colors.green[200],
@@ -91,17 +92,22 @@ class _HomePageState extends State<HomePage> {
                         // margin: EdgeInsets.symmetric(horizontal: 1, vertical: 0),
                         padding: EdgeInsets.all(20),
                         child: Row(children: [
-                          // Image.network("Image"),
-                          Column(
-                            children: [
-                              Text(
-                                "Mark\nAttendance",
-                                style: TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
-                              ),
-                              Text("Icons")
-                            ],
-                          )
+                          Image.asset('assets/images/mark.png',
+                          // width: 10,
+                          // height: 10,
+
+                          ),
+                          // Column(
+                          //   children: [
+                          //     // Image(image: Image.asset('assets/images/mark'),),
+                          //     Text(
+                          //       "Mark\nAttendance",
+                          //       style: TextStyle(
+                          //           fontSize: 12, fontWeight: FontWeight.bold),
+                          //     ),
+                          //     Text("Icons")
+                          //   ],
+                          // )
                         ]),
                       ),
                     ),
@@ -113,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                         },
                     child: Expanded(
                       child: Container(
-                        // width: 20,
+                        width: 100,
                         height: 100,
                         decoration: BoxDecoration(
                           color: Colors.green[200],
@@ -122,17 +128,20 @@ class _HomePageState extends State<HomePage> {
                         // margin: EdgeInsets.symmetric(horizontal: , vertical: 0),
                         padding: EdgeInsets.all(20),
                         child: Row(children: [
+                          Image.asset('assets/images/check.png',
+                          width: 50, height: 50,
+                          ),
                           // Image.network("Image"),
-                          Column(
-                            children: [
-                              Text(
-                                "Check\n Attendance",
-                                style: TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
-                              ),
-                              Text("Icon")
-                            ],
-                          )
+                          // Column(
+                          //   children: [
+                          //     Text(
+                          //       "Check\n Attendance",
+                          //       style: TextStyle(
+                          //           fontSize: 12, fontWeight: FontWeight.bold),
+                          //     ),
+                          //     Text("Icon")
+                          //   ],
+                          // )
                         ]),
                       ),
                     ),
@@ -145,25 +154,28 @@ class _HomePageState extends State<HomePage> {
                     child: Expanded(
                       child: Container(
                         height: 100,
-                        // width: 20,
+                        width: 100,
                         decoration: BoxDecoration(
                           color: Colors.green[200],
                           // border: BorderRadius.circular(10),
                         ),
-                        margin: EdgeInsets.symmetric(horizontal: 1, vertical: 0),
+                        // margin: EdgeInsets.symmetric(horizontal: 1, vertical: 0),
                         padding: EdgeInsets.all(20),
                         child: Row(children: [
                           // Image.network("Image"),
-                          Column(
-                            children: [
-                              Text(
-                                "Request\nA Leave",
-                                style: TextStyle(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
-                              ),
-                              Text("Icon")
-                            ],
-                          )
+                          Image.asset('assets/images/request.png',
+                          width: 50, height: 50,
+                          ),
+                          // Column(
+                          //   children: [
+                          //     Text(
+                          //       "Request\nA Leave",
+                          //       style: TextStyle(
+                          //           fontSize: 12, fontWeight: FontWeight.bold),
+                          //     ),
+                          //     Text("Icon")
+                          //   ],
+                          // )
                         ]),
                       ),
                     ),
@@ -199,24 +211,25 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: new Container(
                             padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
-                            height: 105,
+                            height: 100,
                             width: 100,
                             decoration: BoxDecoration(
                               color: Colors.green[200],
                             ),
                             child: Row(children: [
+                              Image.asset('assets/images/request.png',),
                               // Image.network("Image"),
-                              Column(
-                                children: [
-                                  Text(
-                                    "Leave",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("Icon")
-                                ],
-                              )
+                              // Column(
+                              //   children: [
+                              //     Text(
+                              //       "Leave",
+                              //       style: TextStyle(
+                              //           fontSize: 12,
+                              //           fontWeight: FontWeight.bold),
+                              //     ),
+                              //     Text("Icon")
+                              //   ],
+                              // )
                             ])),
                       ),
                       const SizedBox(width: 15.0),
@@ -227,23 +240,25 @@ class _HomePageState extends State<HomePage> {
                         child: new Container(
                             padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
                             height: 100,
-                            width: 105,
+                            width: 100,
                             decoration: BoxDecoration(
                               color: Colors.green[200],
                             ),
                             child: Row(children: [
+                              Image.asset('assets/images/mark.png'),
+
                               // Image.network("Image"),
-                              Column(
-                                children: [
-                                  Text(
-                                    "Attendance",
-                                    style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("Icon")
-                                ],
-                              )
+                              // Column(
+                              //   children: [
+                              //     Text(
+                              //       "Attendance",
+                              //       style: TextStyle(
+                              //           fontSize: 10,
+                              //           fontWeight: FontWeight.bold),
+                              //     ),
+                              //     Text("Icon")
+                              //   ],
+                              // )
                             ])),
                       ),
                       const SizedBox(width: 15.0),
@@ -254,23 +269,24 @@ class _HomePageState extends State<HomePage> {
                         child: new Container(
                             padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
                             height: 100,
-                            width: 105,
+                            width: 100,
                             decoration: BoxDecoration(
                               color: Colors.green[200],
                             ),
                             child: Row(children: [
+                              Image.asset('assets/images/salary.png'),
                               // Image.network("Image"),
-                              Column(
-                                children: [
-                                  Text(
-                                    "Salary",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("Icon")
-                                ],
-                              )
+                              // Column(
+                              //   children: [
+                              //     Text(
+                              //       "Salary",
+                              //       style: TextStyle(
+                              //           fontSize: 12,
+                              //           fontWeight: FontWeight.bold),
+                              //     ),
+                              //     Text("Icon")
+                              //   ],
+                              // )
                             ])),
                       ),
                     ]),
@@ -282,24 +298,25 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: new Container(
                             padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
-                            height: 105,
+                            height: 100,
                             width: 100,
                             decoration: BoxDecoration(
                               color: Colors.green[200],
                             ),
                             child: Row(children: [
+                              Image.asset('assets/images/benefits.png'),
                               // Image.network("Image"),
-                              Column(
-                                children: [
-                                  Text(
-                                    "Benefits",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("Icon")
-                                ],
-                              )
+                              // Column(
+                              //   children: [
+                              //     Text(
+                              //       "Benefits",
+                              //       style: TextStyle(
+                              //           fontSize: 12,
+                              //           fontWeight: FontWeight.bold),
+                              //     ),
+                              //     Text("Icon")
+                              //   ],
+                              // )
                             ])),
                       ),
                       const SizedBox(width: 15.0),
@@ -310,23 +327,24 @@ class _HomePageState extends State<HomePage> {
                         child: new Container(
                             padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
                             height: 100,
-                            width: 105,
+                            width: 100,
                             decoration: BoxDecoration(
                               color: Colors.green[200],
                             ),
                             child: Row(children: [
+                              Image.asset('assets/images/members.png'),
                               // Image.network("Image"),
-                              Column(
-                                children: [
-                                  Text(
-                                    "Employee",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("Icon")
-                                ],
-                              )
+                              // Column(
+                              //   children: [
+                              //     Text(
+                              //       "Employee",
+                              //       style: TextStyle(
+                              //           fontSize: 12,
+                              //           fontWeight: FontWeight.bold),
+                              //     ),
+                              //     Text("Icon")
+                              //   ],
+                              // )
                             ])),
                       ),
                       const SizedBox(width: 15.0),
@@ -337,23 +355,24 @@ class _HomePageState extends State<HomePage> {
                         child: new Container(
                             padding: EdgeInsets.fromLTRB(25, 25, 25, 25),
                             height: 100,
-                            width: 105,
+                            width: 100,
                             decoration: BoxDecoration(
                               color: Colors.green[200],
                             ),
                             child: Row(children: [
+                              Image.asset('assets/images/calender.png'),
                               // Image.network("Image"),
-                              Column(
-                                children: [
-                                  Text(
-                                    "Calender",
-                                    style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                  Text("Icon")
-                                ],
-                              )
+                              // Column(
+                              //   children: [
+                              //     Text(
+                              //       "Calender",
+                              //       style: TextStyle(
+                              //           fontSize: 12,
+                              //           fontWeight: FontWeight.bold),
+                              //     ),
+                              //     Text("Icon")
+                              //   ],
+                              // )
                             ])),
                       ),
                     ]),
