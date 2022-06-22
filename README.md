@@ -1,6 +1,14 @@
-# smart_attendance
+# ***Smart Attendance System***
 
 WCS Hackathon Project
+
+# Description:-
+It's a platform for companies and their employees to mark their attendance. It takes the employee id and paasword (which was created by the firm itself) and then login to the dashboard. Their it shows various information like your ... When you click on mark your attendace, it first checks whether your location is enabled or not, if not then requests to enable it. Then by geofencing, checks the area whether you're inside the area, if yes then opens your camera to detect your face by machine learning. After succesfull detection your attendance is marked!
+
+# Features:-
+1-> No physical contact
+2-> Employee has to be present at the location
+3-> Face detection includes better security
 
 ## Getting Started
 
