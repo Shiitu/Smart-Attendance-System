@@ -3,6 +3,7 @@ import 'package:smart_attendance/screen/mark.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:icon_decoration/icon_decoration.dart';
 import 'package:smart_attendance/screen/getatt.dart';
+import 'package:smart_attendance/screen/notification.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,7 +18,15 @@ class _HomePageState extends State<HomePage> {
   // void initState() {
   //   super.initState();
   // }
+   int selectedPage = 0;
 
+  final _pageOptions = [
+    HomePage(),
+    // DynamicListView(),
+    Mark(),
+    // SignInScreen()
+  ];
+  // _pageOptions[selectedPage]
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -35,18 +44,31 @@ class _HomePageState extends State<HomePage> {
               )),
         ],
       ),
+      
       bottomNavigationBar:
           new BottomNavigationBar(type: BottomNavigationBarType.fixed, items: [
         new BottomNavigationBarItem(
             icon: new Icon(Icons.home_outlined), label: ("Home")),
         new BottomNavigationBarItem(
             icon: new Icon(Icons.notifications), label: ("Notification")),
-        new BottomNavigationBarItem(
-            icon: new Icon(Icons.settings), label: ("Setting")),
+        // new BottomNavigationBarItem(
+        //     icon: new Icon(Icons.settings), label: ("Setting")),
         new BottomNavigationBarItem(
             icon: new Icon(Icons.person), label: ("Profile"))
-      ]),
-      body: SafeArea(
+      ],
+      selectedItemColor: Colors.purple[300],
+          elevation: 5.0,
+          unselectedItemColor: Colors.purple[900],
+          currentIndex: selectedPage,
+          backgroundColor: Colors.white,
+          onTap: (index){
+            setState(() {
+              selectedPage = index;
+            });
+            }
+      ),
+      body: 
+      SafeArea(
         child: Padding(
           padding: EdgeInsets.all(20.0),
           child: Column(
