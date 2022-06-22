@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
                           print("Container clicked");
                            Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Profile()),
+                            MaterialPageRoute(builder: (context) => Get()),
                             );
                         },
                     child: Expanded(
