@@ -4,7 +4,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:icon_decoration/icon_decoration.dart';
 import 'package:smart_attendance/screen/getatt.dart';
 import 'package:smart_attendance/screen/notification.dart';
-
+import 'package:smart_attendance/screen/profile.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -143,7 +143,7 @@ class _HomePageState extends State<HomePage> {
                           print("Container clicked");
                            Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Mark()),
+                            MaterialPageRoute(builder: (context) => Profile()),
                             );
                         },
                     child: Expanded(
